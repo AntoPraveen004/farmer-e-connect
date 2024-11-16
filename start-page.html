@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+
+    <!-- jQuery library -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+    <!-- Popper JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+
+    <!-- Latest compiled JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+    <script src="https://kit.fontawesome.com/79230e03f6.js" crossorigin="anonymous"></script>
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous"></script>
+
+
+    <title>Document</title>
+    <style>
+        body {
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
+            }
+        .image-1{
+            background-image: url('istockphoto-806276128-612x612.jpg');
+            height: 250px;
+            width: 250px;
+            background-size: cover;
+            color: white;
+            text-align: center;
+            font-weight: bold;
+            border: 1px solid ;
+            border-color: rgb(0, 119, 255);
+            margin: 30px;
+            border-radius: 24px 24px 24px 24px;
+            border: solid 1px ridge;
+            box-shadow: rgba(0, 0, 0, 0.07) 0px 1px 2px, rgba(0, 0, 0, 0.07) 0px 2px 4px, rgba(0, 0, 0, 0.07) 0px 4px 8px, rgba(0, 0, 0, 0.07) 0px 8px 16px, rgba(0, 0, 0, 0.07) 0px 16px 32px, rgba(0, 0, 0, 0.07) 0px 32px 64px;
+
+        }
+        .image-1 h1{
+            font-size: 50px;
+            background-color: rgba(0, 0, 0, 0.671);
+        }
+        .image-2{
+            background-image: url('160618-MAIN-fresh-food-delivery-c-ING-Image.jpg');
+            height: 250px;
+            width: 250px;
+            background-size: cover;
+            color: rgb(255, 255, 255) ;
+            text-align: center;
+            font-weight: bold;
+            filter: brightness(90%);
+            border: 1px solid ;
+            border-color: rgb(0, 119, 255);
+            margin: 30px;   
+            border-radius: 24px 24px 24px 24px;
+            box-shadow: rgba(0, 0, 0, 0.07) 0px 1px 2px, rgba(0, 0, 0, 0.07) 0px 2px 4px, rgba(0, 0, 0, 0.07) 0px 4px 8px, rgba(0, 0, 0, 0.07) 0px 8px 16px, rgba(0, 0, 0, 0.07) 0px 16px 32px, rgba(0, 0, 0, 0.07) 0px 32px 64px;
+
+        }
+        .image-2 h1{
+            font-size: 50px;
+            background-color: rgba(0, 0, 0, 0.671);
+        }
+        .card-main{
+            
+            padding: 20px;
+            border-radius: 24px;
+            border: 1px solid ;
+            border-color: rgba(0, 119, 255, 0.445);
+            display: block;
+            margin-left: 200px;
+            margin-right: 200px;
+        }
+        .navigation{
+            
+            width: 100%;
+            padding-left: 18px;
+        }
+        #dropdownContent {
+        display: none;
+        position: absolute;
+        background-color: #f9f9f9;
+        min-width: 160px;
+        padding: 10px;
+        z-index: 1;
+        }
+
+        .show {
+        display: block;
+        }
+        .button-start{
+            padding: 5px;
+            border: none;
+            background-color: #dddddd49;
+            border: 1px solid;
+            border-color: rgba(197, 197, 197, 0.541);
+            border-radius: 5px;
+            margin-right: 6px;
+            width: 190px;
+        }
+        .button-start-1{
+            padding: 7px;
+            border: none;
+            background-color: #dddddd49;
+            border: 1px solid;
+            border-color: rgba(197, 197, 197, 0.541);
+            border-radius: 5px;
+            margin-right: 6px;
+            width: 190px;
+        }
+    </style>
+</head>
+<body class="d-flex flex-column justify-content-around">
+
+    <header>
+        <nav class="navbar navbar-expand-sm d-felx flex-column justify-content-start">
+
+                <div class="d-flex flex-row justify-content-center" style="margin-right:80px;">
+                    <a class="navbar-brand" href="#">
+                        <img src="WhatsApp Image 2023-06-03 at 00.51.02.jpeg" alt="logo" style="width:80px;">
+                      </a>
+                      <h1> Farm-E-Connect</h1>
+                </div>
+            <ul class="navbar-nav">
+                <li class="nav-item">
+                   made by @baha.co
+                </li> 
+              </ul>
+        </nav>
+        <hr>
+        <div class=" navigation d-flex flex-row justify-content-around">
+            <button class="button-start">Home</button>
+            <select  id="websiteDropdown" onchange="openSelectedWebsite()" class="button-start-1">
+                <option value="start-page.html" >Prices</option>
+                <option value="price.html">Vegetables prices</option>
+                <option value="Cereals.html">Commodity prices</option>
+                <option value="egg price.html">Egg prices</option>
+                <option value="fruits.html">Fruit prices</option>
+                <option value="fish.html">Meats</option>
+                
+                
+                
+              </select>
+            <a href="hari demand.html"><button class="button-start">Demand</button></a>
+           <a href="advancement.html"> <button class="button-start">Advancement</button></a>
+            <button class="button-start">Notifications</button>
+        </div>
+        <hr>
+    </header>
+    
+    <main>
+        <div  class="card-main d-flex flex-row justify-content-center">
+            <div >
+                <a href="burger.html"><div class="image-1 d-flex flex-column justify-content-center">
+                    <h1>FARMER</h1>    
+                </div></a>
+                <div style="text-align: center; width: 300px;">
+                    Choose option Farmer if you are a farmer and you want to sell your
+                    products for<br> best price !
+                </div>
+            </div>
+
+            <div>
+                <a href="user login page.html"><div class="image-2 d-flex flex-column justify-content-center">
+                    <h1>BUYER</h1>
+                </div></a>
+                <div style="text-align: center; width: 300px;">
+                    Choose option Buyer if you want to buy the best products directly from the farmers for best price! 
+                </div>
+            </div>
+
+        </div>
+  
+        </div>
+    </main>
+    <hr>
+    <footer>
+        <div style="text-align: center;">
+            2023 Your Farm-E-connect. All Rights Reserved.
+        </div>
+    </footer>
+    <script>
+        function openSelectedWebsite() {
+            var dropdown = document.getElementById("websiteDropdown");
+            var selectedValue = dropdown.value;
+            
+            if (selectedValue) {
+                window.location.href = selectedValue;
+            }
+        }
+    </script>
+</body>
+</html>

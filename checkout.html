@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Checkout</title>
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+
+    <!-- jQuery library -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+    <!-- Popper JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+
+    <!-- Latest compiled JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+    <script src="https://kit.fontawesome.com/79230e03f6.js" crossorigin="anonymous"></script>
+
+    <link rel="stylesheet" href="css/checkout.css">
+</head>
+<body>
+    <nav class="navbar navbar-expand-sm ">
+        <div class="container">
+          <!-- Brand/logo -->
+          <a class="navbar-brand" href="#">
+            <img src="images/Baby Food.png" alt="logo" style="width:40px;">
+          </a>
+          
+          <!-- Links -->
+          <ul class="navbar-nav">
+            
+            
+            <li class="nav-item">
+              <a class="nav-link text-dark" href="main2.html">Return to Home</a>
+            </li>
+            <!-- <li class="nav-item">
+              <a class="nav-link text-dark" href="#">logout</a>
+            </li> -->
+            <li class="nav-item">
+              <!-- <a class="nav-link" href="#">Link 3</a> -->
+            </li>
+          </ul>
+        </div>
+        </nav>
+        <!-- end of nav  -->
+
+        <div class="container checkout mx-auto mt-5 row">
+            <div class="deladd col-md-8 pb-4 row">
+                <div class="heading col-md-12 m-0 row">
+                    <h4 class="mx-auto">Getting Your Order</h4>
+                </div>
+                <hr class="hr1">
+                <div class="subheading p-3">
+                    <h6>Shipping Information</h6>
+                </div>
+                
+                <form action="" class="row col-md-12 form">
+                        <div class="col-md-12 row pr-0">
+                            <div class="col-md-6 pr-0">
+                                <label for="">First Name</label>
+                                <div class="fname"><input type="text" class="form-control"></div>
+                            </div>
+                            <div class="col-md-6 pr-0">
+                                <label for="">Last Name</label>
+                                <div class="sname"><input type="text" class="form-control"></div>
+                        
+                            </div>
+                        </div>
+                        <!-- end of fname sname  -->
+                        <div class="col-md-12 mt-2">
+                            <label for="">Email</label>
+                            <div class="email"><input type="email" class="form-control"></div>
+                        </div>
+                        <!-- end of email  -->
+                        <div class="col-md-12 mt-2">
+                            <label for="">Address</label>
+                            <div class="address"><input type="text" class="form-control"></div>
+                        </div>
+                        <!-- end of address  -->
+                        <div class="col-md-12 row pr-0 mt-2">
+                            <div class="col-md-6 pr-0">
+                                <label for="">Postal Code</label>
+                                <div class="pc"><input type="text" class="form-control"></div>
+                            </div>
+                            <div class="col-md-6 pr-0 ">
+                                <label for="">City</label>
+                                <div class="city"><input type="text" class="form-control"></div>
+                        
+                            </div>
+                        </div>
+                        <!-- end of postalcode and city  -->
+                        <div class="col-md-12 mt-2">
+                            <label for="">Phone Number</label>
+                            <div class="phone"><input type="text" class="form-control"></div>
+                        </div>
+                        <!-- end of mob  -->
+                        <div class="col-md-12 mt-2">
+                            <input type="checkbox" class="">
+                            <span>Save this as my billing address</span>
+                        </div>
+                        <!-- end of check  -->
+                        <hr>
+                        <div class="col-md-12 mt-2">
+                            <a href="payment.html"><button type="button">Continue to Payment Information</button></a>
+                        </div>
+                        <!-- end of btn  -->
+                </form>
+            </div>
+            <!-- end of from section  -->
+            <div class="col-md-4 ordsum m-0 p-0">
+                <h4 class="text-center">Order Summury</h4>
+                <div class="col-md-12 summcntnt border mt-4">
+                    <h6 class="mt-5 mb-3">Shipping</h6>
+                <div class="col-md-12 row">
+                    <div class="col-4 ordrimg p-0">
+                        <img src="images/b1.jpg" alt="" class="responsive">
+                    </div>
+                    <div class="col-8 text-right">
+                        <p>Lorem ipsum dolor</p>
+                        <p>₹399</p>
+                    </div>
+                </div>
+                <div class="col-md-12 mt-2 row">
+                    <div class="col-6">Qty</div>
+                    <div class="col-6 text-right">1</div>
+                </div> 
+                <div class="col-md-12 mt-2 row">
+                    <div class="col-6">Price</div>
+                    <div class="col-6 text-right">₹299</div>
+                </div> 
+                <div class="col-md-12 mt-2 row">
+                    <div class="col-6">Shipping</div>
+                    <div class="col-6 text-right">₹50</div>
+                </div> 
+                <div class="col-md-12 mt-2 row">
+                    <div class="col-6">Tax</div>
+                    <div class="col-6 text-right">₹10</div>
+                </div>
+               
+                <div class="col-md-12 mt-2 row border-top total">
+                    <div class="col-6"><strong>Total</strong> </div>
+                    <div class="col-6 text-right"><strong>
+                        ₹<span id="ctprice">259</span>
+                    </strong></div>
+                </div>
+                
+                </div>
+            </div>
+            
+        </div>
+        <script src="js/ordersumm.js"></script>
+</body>
+</html>

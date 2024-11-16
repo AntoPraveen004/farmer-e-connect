@@ -1,2 +1,3 @@
-# farmer-e-connect
- This web helps in connecting the farmer directly with the seller
+# Fooddies-webpage
+Home Page design in php so its requird to run xamp.
+Main Page is simple on html,css,js,bootstrap.

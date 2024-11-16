@@ -1,0 +1,234 @@
+.navbar .logo {
+    width: 60px;
+    height: 60px;
+    /* border: 2px red solid; */
+    float: left;
+}
+
+.navbar .dropdowns {
+    float: left;
+    padding: 15px;
+}
+
+.navbar .dropdown-menu {
+    position: absolute;
+    left: 90px;
+}
+
+.navbar .col-md-6 {
+    padding-top: 15px;
+    /* border: 2px solid red; */
+}
+
+.navbar {
+    /* border: 2px solid red; */
+    background-color: white;
+    box-shadow: 1px 1px 10px rgb(189, 187, 187);
+    position: sticky;
+    top: 0px;
+    z-index: 2;
+    margin: 0%;
+}
+
+.navbar .vegfilter {
+    margin: 15px;
+    /* border: 1px red solid; */
+    width: 90px;
+    padding: 5px;
+    border-radius: 3px;
+    box-shadow: 1px 1px 10px rgb(194, 194, 194);
+    font-size: 0.9em;
+    font-weight: 500;
+    float: left;
+    margin-left: 50px;
+}
+
+.col-md-3 .sortbtn {
+    /* border: 1px red solid; */
+    float: left;
+    margin: 14px;
+    color: aliceblue;
+    background-color: rgb(26, 24, 24);
+    border-radius: 5px;
+    padding: 7px 20px;
+}
+.logbtn{
+    position:absolute;
+    right: 0px;
+    display: block;
+    top: 15px;
+    background-color: rgb(26, 24, 24);
+    color: aliceblue;
+    border-radius: 5px;
+    padding: 8px 15px;
+    
+}
+
+.logbtn:hover{
+    color: aliceblue;
+    text-decoration: none;
+}
+
+
+/* .col-md-3{
+    border: 1px red solid;
+} */
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    position: relative;
+}
+
+.dishes nav {
+    position: sticky;
+    top: 80px;
+    /* z-index: 1; */
+    background: white;
+    min-height: 100vh;
+    padding-top: 15px;
+    /* margin-right: 40px; */
+    border-right: 1px solid rgb(236, 231, 231);
+    text-align: left;
+    padding-left: 80px;
+    /* border: 1px solid red; */
+}
+
+.dishes nav a {
+    color: black;
+}
+
+.dishes nav a:hover {
+    background: none;
+}
+
+.dishes .nav-pills>li.active>a,
+.nav-pills>li.active>a:focus,
+.nav-pills>li.active>a:hover {
+    color: crimson !important;
+    font-weight: bolder;
+    background-color: white;
+}
+
+.dishes {
+    margin-top: 0px;
+    /* border: 5px solid red; */
+}
+
+.dishes .mid {
+    text-align: center;
+    background-color: white;    
+}
+
+.dishes .cart {
+    padding-top: 60px;
+    min-height: 100px;
+    background-color: white;
+    position: sticky;
+    top: 66px;
+}
+
+.cart svg {
+    width: 70%;
+    height: 300px;
+    margin-left: 55px;
+    margin-top: 20px;
+    border: 1px dashed rgb(180, 179, 179);
+    padding-left: 50px;
+}
+
+.cartEmptyMessage {
+    padding: 20px;
+    text-align: center;
+    color: gray;
+}
+
+.cartEmptyMessage span {
+    font-weight: bold;
+    color: rgb(0, 0, 0);
+}
+
+#section1,
+#section2,
+#section3,
+#section4,
+#section5,
+#section6,
+#section7,
+#section8,
+#section9,
+#section10,
+#section11,
+#section12 {
+    /* border: 1px solid red; */
+    min-height: 600px;
+    padding-top: 60px;
+    /* background-color: aqua; */
+}
+.dishes .panel{
+    /* border: #ff5e00 1PX solid; */
+    /* margin: 20px; */
+    /* min-height: 380px; */
+    padding:  0px   ;
+    border-radius: 20px;
+    background-color: whitesmoke;
+}
+.dishes .panel-price{
+    color: #0f0f0f;
+    /* display: inline-block; */
+    padding: 0px 15px;
+    padding-top: 20px;
+    padding-bottom: 10px;
+    float: left;
+}
+.dishes button{
+    margin-top: 10px;
+    margin-left: 90px;
+    padding: 8px 20px;
+    padding-bottom: 10px;
+    
+}
+.dishes img{
+    border-radius: 30px 30px 0px 0px;
+    width: 100%;
+    height: 210px;
+}
+.dishes .panel-body{
+    text-align: center;
+    padding: 0;
+}
+
+
+
+/* veg & nonveg */
+.outveg{
+    width: 14px;
+    height: 14px;
+    border: green 1px solid;
+    margin: 10px;
+    padding: 1px;
+
+}
+
+ .veg{
+    /* position: absolute; */
+    width: 10px;
+    height: 10px;
+    background: green;
+   
+    border-radius: 50%;
+    display: block;
+}
+ .nveg{
+    background: brown;
+    
+}
+
+ .noutveg{
+    border: 1px solid brown;
+}
+.identy-veg {
+    margin-top: 22px;
+}

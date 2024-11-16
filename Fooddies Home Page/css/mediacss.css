@@ -1,0 +1,61 @@
+@media screen and (max-width: 500px){
+    .slider .item{
+        height: 200px;
+    }
+    #myNavbar{
+        background-color: rgb(255, 255, 255);
+        z-index: 2;
+    }
+    .carousel-indicators{
+        z-index: 0;
+    }
+    #login{
+        position: absolute;
+        left: 80px;
+    } #signup{
+        position: absolute;
+        left: 80px;
+    }
+    .locate .ch{
+        font-size: 30px;
+    }
+   .nav-pills{
+       background: white;
+       height: 200px;
+   }
+  
+   .buy .row{
+    height: 200px;
+   }
+   #myScrollspy{
+    background: white;
+    height: 10px;
+    
+   }
+   .abt-btn p{
+       text-align: center;
+   }
+   .city .col-md-4{
+       width: 50%;
+       float: right;
+   }
+   .social {
+       display: none;
+   }
+   .mob{
+    display: block;
+    
+    }
+    .img-tstmnl img{
+    display: inline-block;
+    margin-left: 60px;
+    }
+    .locate{
+        padding-top: 0px;
+        padding-bottom: 0px;
+      
+    }
+
+   
+   
+}

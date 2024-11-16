@@ -1,0 +1,100 @@
+.order_dtl .left{
+    text-align: right;
+}.order_dtl .right{
+    text-align: left;
+}
+.progress{
+    height: 3px;
+   /* display: inline-block; */
+}
+.last{
+    position: relative;
+    left: 200px;
+}
+.second{
+    margin-left: 40px;
+}
+.third{
+    margin-left: 10px;
+    text-align: right;
+}
+.fourth{
+    margin-left: 50px;
+    text-align: right;
+}
+.fs{
+    margin-left: 25px;
+}   
+.ss{
+    margin-left: 45px;
+}  .ts{
+        
+    margin-right: 40px;
+}  .fs{
+   
+    margin-right: 32px;
+}   
+.fis{
+    
+    margin-right: 30px;
+}   
+.track-mob{
+    display: none;
+    
+}
+.dadd{
+    min-height: 200px;
+}
+.cntnt-add{
+    text-align: center;
+}
+
+
+
+@media screen and (max-width: 500px){
+    .track-desk{
+        display: none;
+    }
+    .track-mob{
+        display: block;
+        
+       
+    }
+    .track-mob .col-2{
+        height: 100px;
+        width: 0px;
+        /* border-right: 5px solid limegreen; */
+        margin-top: 25px;
+    }
+
+    .f-icon{
+        position: absolute;
+        left: 68px;
+        z-index: 5;
+        font-size: 30px;
+    }.l-icon{
+        position: absolute;
+        left: 68px;
+        bottom: 80px;
+        z-index: 5;
+        font-size: 30px;
+    }
+    .lst-trck{
+        padding-top: 10px;
+    }
+    .brd{
+        border-right: 5px solid gray;
+    }
+    .sucbrd{
+        border-right: 5px solid limegreen;
+    }
+    .order_dtl .left{
+        text-align: left;
+    }.order_dtl .right{
+        text-align: right;
+    }
+    .ratingicons{
+        padding-top: 30px;
+    }
+
+}

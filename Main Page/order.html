@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>orders</title>
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+
+    <!-- jQuery library -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+    <!-- Popper JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+
+    <!-- Latest compiled JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+    <script src="https://kit.fontawesome.com/79230e03f6.js" crossorigin="anonymous"></script>
+
+    <link rel="stylesheet" href="css/order.css">
+</head>
+<body>
+    <nav class="navbar navbar-expand-sm ">
+      <div class="container">
+        <!-- Brand/logo -->
+        <a class="navbar-brand" href="#">
+          <img src="images/Baby Food.png" alt="logo" style="width:40px;">
+        </a>
+        <!-- <input type="text" class="form-control from-group" placeholder="Search your orders ">
+        <button class="btn btn-primary ml-2">Search</button> -->
+        <div class="input-group ">
+          <input type="text" class="form-control" placeholder="Search your orders here" aria-label="Recipient's username" aria-describedby="basic-addon2">
+          <div class="input-group-append">
+            <button class="input-group-text btn btn-primary" id="basic-addon2">Search</button> 
+          </div>
+        </div>
+        <!-- Links -->
+        <ul class="navbar-nav">
+  
+          
+          <li class="nav-item ml-3">
+            <a class="nav-link  btn btn-outline-primary" href="main2.html">Home</a>
+          </li>
+          <li class="nav-item">
+            <!-- <a class="nav-link text-dark btn btn-outline-primary" href="#">Logout</a> -->
+          </li>
+          <li class="nav-item">
+            <!-- <a class="nav-link" href="#">Link 3</a> -->
+          </li>
+        </ul>
+      </div>
+      </nav>
+      <!-- end of nav  -->
+
+    <div class="container orders mt-5">
+      <a href="trackorder.html">
+        <div class="col-12 row mt-3 border line">
+          <div class="col-6 p-0">
+            <div class="col-3 img">
+              <img src="images/b1.jpg" class="responsive" alt="" >
+            </div>
+            <div class="col-9 cntnt">
+              <h5 class="m-0">Tomato</h5>
+              <p>Chennai</p>
+              <p>Tamilnadu</p>
+            </div>
+          </div>
+          <div class="col-2 p-3 price">
+            ₹249
+          </div>
+          <div class="col-4 p-3 status">
+            <div class="successc"></div>
+            <h5 class="m-0">Delivery expected on Mar 07</h5>
+            <p>Your order has been placed</p>
+          </div>
+        </div>
+      </a>
+      <!-- end of row  -->
+      <a href="">
+        <div class="col-12 row mt-3 border line">
+          <div class="col-6 p-0">
+            <div class="col-3 img">
+              <img src="images/b20.jpg" class="responsive" alt="" width="100">
+            </div>
+            <div class="col-9 cntnt">
+              <h5 class="m-0">Potato</h5>
+              <p>Coimbatore</p>
+              <p>Tamilnadu</p>
+            </div>
+          </div>
+          <div class="col-2 p-3 price">
+            ₹299
+          </div>
+          <div class="col-4 p-3 status">
+            <div class="dangerc"></div>
+            <h5 class="m-0">Cancelled</h5>
+            <p>Your order has been cancelled</p>
+          </div>
+        </div>
+      </a>
+      <!-- end of row  -->
+      
+      
+    </div>
+
+    
+</body>
+</html>

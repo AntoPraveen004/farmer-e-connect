@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html>
+<head>
+ <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+ <img href="former detail.css" rel="stylesheet">
+</head>
+<body>
+  <!-- Logo -->
+  <img src="logo.jpeg" alt="Logo" class="logo">
+
+  <div id="page1">
+   <h1 class="govt">GOVERNMENT SCHOLARSHIP</h1>
+    <div class="container1">
+      <img class="img1" src="national.png" alt="Image 1">
+      <div>
+        <h1>National Scholarship Portal</h1>
+        <p> Ministry of Electronics & Information Technology, Government of India
+            (For Academic Year 2022-23)</p>
+        <a href="https://scholarships.gov.in/">link1</a>
+      </div>
+    </div>
+  
+    <div class="container1">
+      <img class="img1" src="up.jpg" alt="Image 2">
+      <div>
+        <h1>GOVERNMENT of UP</h1>
+        <p>ministry of education</p>
+        <a href="https://scholarship.up.gov.in/">Link</a>
+      </div>
+    </div>
+  
+.    <div class="container1">
+      <img class="img1" src="anna.png" alt="Image 3">
+      <div>
+        <h1>ANNA UNIVERSITY</h1>
+        <p>SC ST CELL, ANNA UNIVERSITY, CHENNAI</p>
+        <a href="https://www.annauniv.edu/scstcell/scholarship.html">Link 3</a>
+      </div>
+    </div>
+  
+    <div class="container1">
+      <img class="img1" src="tamil.png" alt="Image 4">
+      <div>
+        <h1>Government OF TAMIL NADU</h1>
+        <p>BC, MBC & Minorities Welfare Department.</p>
+        <a href="https://www.tn.gov.in/scheme/data_view/27488">Link</a>
+      </div>
+    </div>
+  </div>
+  
+  <div id="page2" style="display:none;">
+   <h1 class="prvt">PRIVATE SCHOLARSHIP</h1>
+    <div class="container2">
+      <img class="img2" src="vidyas.png" alt="Image 5">
+      <div>
+        <h1>VIDYASAARATHI 5</h1>
+        <p>Vidyasaarathi is a platform by Protean eGov Technologies Limited (Formerly NSDL e-Governance Infrastructure Limited) </p>
+        <a href="https://www.vidyasaarathi.co.in/Vidyasaarathi/">Link 5</a>
+      </div>
+    </div>
+    
+    <div class="container2">
+      <img class="img2" src="Team Everest Logo.png" alt="Image 6">
+      <div>
+        <h1>TEAM EVEREST</h1>
+        <p>Team Everest is one of the biggest youth run NGOs in India. Our vision is to inspire everyone to volunteer. 
+
+        </p>
+        <a href="https://www.everestscholarship.com/?gclid=EAIaIQobChMI8qHVvr-T_wIVhJhmAh3tYgaaEAAYASAAEgJohPD_BwE">Link 6</a>
+      </div>
+    </div>
+    
+    <div class="container2">
+      <img class="img2" src="IIT.png" alt="Image 7">
+      <div>
+        <h1>INDIAN INSITUTE OF TECHNOLOGY</h1>
+        <p>SCHOLARSHIPS & FINANCIAL ASSISTANCE.</p>
+        <a href="#">Link 7</a>
+      </div>
+    </div>
+    
+    <div class="container2">
+      <img class="img2" src="vidyas.png" alt="Image 8">
+      <div>
+        <h1></h1>
+        <p>Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+        <a href="https://www.vidyasaarathi.co.in/Vidyasaarathi/">Link</a>
+      </div>
+    </div>
+  </div>
+  
+  <div class="pagination">
+    <a href="#" class="active">1</a>
+    <a href="#" onclick="showPage(2)">2</a>
+  </div>
+  
+  <script>
+    // Pagination logic
+    const page1 = document.getElementById('page1');
+    const page2 = document.getElementById('page2');
+    const paginationLinks = document.querySelectorAll('.pagination a');
+    
+    function showPage(pageNumber) {
+      if (pageNumber === 1) {
+        page1.style.display = 'block';
+        page2.style.display = 'none';
+      } else if (pageNumber === 2) {
+        page1.style.display = 'none';
+        page2.style.display = 'block';
+      }
+      
+      setActiveLink(pageNumber);
+    }
+    
+    function setActiveLink(pageNumber) {
+      for (let i = 0; i < paginationLinks.length; i++) {
+        paginationLinks[i].classList.remove('active');
+      }
+      
+      paginationLinks[pageNumber - 1].classList.add('active');
+    }
+    
+    // Show initial page
+    showPage(1);
+    
+    // Add event listeners to pagination links
+    for (let i = 0; i < paginationLinks.length; i++) {
+      paginationLinks[i].addEventListener('click', function(e) {
+        e.preventDefault();
+        const pageNumber = parseInt(this.innerText);
+        showPage(pageNumber);
+      });
+    }
+  </script>
+</body>
+</html>
